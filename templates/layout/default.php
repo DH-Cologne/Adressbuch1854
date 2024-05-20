@@ -71,7 +71,7 @@ $description = 'Adressbuch 1854';
 </head>
 <body>
 
-<details>
+<!-- <details>
 <summary><strong>Datenschutz &nbsp</strong></summary>
 <div style="display:flex;justify-content:center">
         
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </script>
 </div>
 </div>
-</details>
+</details> -->
 
 	<header>
 
