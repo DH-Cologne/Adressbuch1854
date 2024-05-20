@@ -50,7 +50,10 @@
     "prefer-stable": true,
     "config": {
         
-        "platform-check": false
+        "platform-check": false,
+        "allow-plugins": {
+            "cakephp/plugin-installer": true
+        }
     },
     "minimum-stability": "dev"
 }
