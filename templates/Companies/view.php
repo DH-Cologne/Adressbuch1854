@@ -59,10 +59,10 @@ $uri = $this->request->getRequestTarget();
             						<td style="display:flex;">
 									<?php print image('http://adressbuch1854.dh.uni-koeln.de/scans/','SD/','BHVP_703983_',$begP);?><br>
 									<?php print scan_zotero($begP); ?>
-									<?php print text('/webroot/Ocerisations/','BHVP_703983_',$begP); ?>
+									<?php print text('/Ocerisations/','BHVP_703983_',$begP); ?>
             	   					</td> 
             						<td><a href="/pages/panier_export?action=ajout&amp;l=<?= $company->id ?>&amp;n=<?= $company->name ?>&amp;p=<?= $company->profession_verbatim?>&amp;u=<?= $this->request->getUri(); ?>" onclick="window.open(this.href, '', 
-				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/webroot/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a>
+				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a>
 			<td>
 	</tr>
             				<tr>
@@ -71,7 +71,7 @@ $uri = $this->request->getRequestTarget();
             						<details>
 										<summary><?= __('Volltext der Seite ansehen')?></summary>
 										<form>
-										<button type='submit' formtarget='_blank' formaction='/webroot/scans/Ocerisations/BHVP_703983_<?php echo $begP ?>.txt'
+										<button type='submit' formtarget='_blank' formaction='/scans/Ocerisations/BHVP_703983_<?php echo $begP ?>.txt'
 										value="text">BHVP_703983_<?php echo $begP ?>.txt</button>
 										</form>
 									</details>

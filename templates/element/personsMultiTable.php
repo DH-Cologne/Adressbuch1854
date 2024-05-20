@@ -113,7 +113,7 @@ $this->Html->css('multiTable.css');
 			<!-- possiblité d'enregistrer nos recherches dans un panier pour les exporter plus tard -->
 
 			<td><a href="/pages/panier_export?action=ajout&amp;l=<?= $person->id ?>&amp;n=<?= $name ?>&amp;p=<?= $person->profession_verbatim?>&amp;u=<?= $this->request->getUri(); ?>" onclick="window.open(this.href, '', 
-				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/webroot/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a>
+				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a>
 			<td>
 		</tr>
 		<?php

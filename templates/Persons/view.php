@@ -76,10 +76,10 @@
 							<?php print image('http://adressbuch1854.dh.uni-koeln.de/scans/','SD/','BHVP_703983_',$begP);?><br>
 							<?php print scan_zotero($begP); ?>
 							<!-- si on veut mettre les OCR avec les scans -->
-							<?php print text('/webroot/Ocerisations/','BHVP_703983_',$begP); ?><br>	
+							<?php print text('/Ocerisations/','BHVP_703983_',$begP); ?><br>	
 						</td>
 						<td><a href="/pages/panier_export?action=ajout&amp;l=<?= $person->id ?>&amp;n=<?= $name ?>&amp;p=<?= $person->profession_verbatim?>&amp;u=<?= $this->request->getUri(); ?>" onclick="window.open(this.href, '', 
-				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/webroot/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a>
+				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a>
 			<td>
 
 						<!--<td>
@@ -98,7 +98,7 @@
 							<details>
 								<summary><?= __('Volltext der Seite ansehen')?></summary>
 									<form>
-										<button type='submit' formtarget='_blank' formaction='/webroot/Ocerisations/BHVP_703983_<?php echo $begP ?>.txt'
+										<button type='submit' formtarget='_blank' formaction='/Ocerisations/BHVP_703983_<?php echo $begP ?>.txt'
 										value="text">BHVP_703983_<?php echo $begP?>.txt</button>
 									</form>
 							</details>
@@ -241,7 +241,7 @@
 		"postalCode":"F-75",
 		"streetAddress":"<?php echo $houseno. ' ' . $addr_name. ' ('. $addr_new. ')'?>"
 	},
-	"image":"<?php echo 'https://adressbuch1854.dh.uni-koeln.de/webroot/scans/HD/BHVP_703983_'. $begP .'.jpg'?>",
+	"image":"<?php echo 'https://adressbuch1854.dh.uni-koeln.de/scans/HD/BHVP_703983_'. $begP .'.jpg'?>",
 	"jobTitle":"<?php echo $precision2 ?>",
 	"name":"<?php echo $name ?>",
 	"url":"<?php echo $this->request->getUri() ?>"

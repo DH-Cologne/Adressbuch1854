@@ -131,11 +131,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ?>   
 
 <nav class="top-nav">
-	<label class="label2" for="toggle"><img src="/webroot/scans/index.png" style="width:30px" alt="menu"></label>
+	<label class="label2" for="toggle"><img src="/scans/index.png" style="width:30px" alt="menu"></label>
         <input type="checkbox" id="toggle">
             <div class="main_pages">
               <a href="/pages/home">
-              <?=$this->Html->image('/webroot/scans/icon-house.png', [ 'width'=>'50px','alt'=>'home-logo','title'=>'home'])?>
+              <?=$this->Html->image('/scans/icon-house.png', [ 'width'=>'50px','alt'=>'home-logo','title'=>'home'])?>
               </a>
               <a href='/search/query' class='<?php if ($current == 'query'){ echo 'top-nav-item';} else{ echo'top-nav-item2';}?>'>Suche</a>
               <a href='/pages/addressbook' class='<?php if ($current == 'addressbook'){ echo 'top-nav-item';} else{ echo'top-nav-item2';}?>'>Adressbuch</a>
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               <a href='/pages/partners' class='<?php if ($current == 'partners'){ echo 'top-nav-item';} else{ echo'top-nav-item2';}?>'>Partner und Team</a>
               <a href='/pages/hilfe' class='<?php if ($current == 'hilfe'){ echo 'top-nav-item';} else{ echo'top-nav-item2';}?>'>Hilfe</a>
               <a href="/pages/panier_export">
-              <?= $this->Html->image('/webroot/scans/icon-download.png', ['width'=>'25px', 'alt'=>'download-logo', 'title'=>'download']) ?>
+              <?= $this->Html->image('/scans/icon-download.png', ['width'=>'25px', 'alt'=>'download-logo', 'title'=>'download']) ?>
               </a>
             </div>
 </nav>
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     <footer>
         <div class="contact2">
         <a target="_blank" href="https://dh.phil-fak.uni-koeln.de/">
-            <?=$this->Html->image('/webroot/scans/IDH.jpg', ['class' => 'wrapper-item', 'id' => 'idh-logo', 'alt' => 'Logo IDH', 'style'=>'width:70px;padding-right:4px;'])?>
+            <?=$this->Html->image('/scans/IDH.jpg', ['class' => 'wrapper-item', 'id' => 'idh-logo', 'alt' => 'Logo IDH', 'style'=>'width:70px;padding-right:4px;'])?>
         </a>
             <p><br><strong>Institut für Digital Humanities</strong><br>
                 Universität zu Köln<br>
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         </div>
         <div class="contact3">
 		<a target="_blank" href="https://www.dhi-paris.fr/">
-			<?=$this->Html->image('/webroot/scans/logo.png', ['class' => 'wrapper-item', 'id' => 'dhi-logo', 'alt' => 'Logo DHIP', 'style' =>'width:70px;padding-right:4px;'])?>
+			<?=$this->Html->image('/scans/logo.png', ['class' => 'wrapper-item', 'id' => 'dhi-logo', 'alt' => 'Logo DHIP', 'style' =>'width:70px;padding-right:4px;'])?>
 		</a>
         <p><br><strong>Deutsches Historisches Institut Paris</strong><br>
             Hôtel Duret-de-Chevry<br>
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         </div>
         <div class="contact">
          <a target="_blank" href="https://www.maxweberstiftung.de/startseite.html">
-            <?=$this->Html->image('/webroot/scans/MWS.svg', ['class' => 'wrapper-item', 'id' => 'idh-logo', 'alt' => 'Logo Max Weber stifung', 'width' => '125px', 'style'=>'padding:10px'])?>
+            <?=$this->Html->image('/scans/MWS.svg', ['class' => 'wrapper-item', 'id' => 'idh-logo', 'alt' => 'Logo Max Weber stifung', 'width' => '125px', 'style'=>'padding:10px'])?>
         </a>
 </div>
     </footer>

@@ -76,7 +76,7 @@ $this->Html->css('multiTable.css');
 			<!-- on ajoute la possiblité d'enregistrer nos recherches dans un panier pour exporter à la fin -->
 
 			<td><a href="/pages/panier_export?action=ajout&amp;l=<?= $company->id ?>&amp;n=<?= $company->name?>&amp;p=<?= $company->profession_verbatim?>&amp;u=<?= $this->request->getUri() ?>" onclick="window.open(this.href, '', 
-		'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/webroot/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a><td>
+		'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a><td>
 		</tr>
 		<?php print zoterocomp($nachname, $prof_category, $profession, $addr_no, $addr_old, $company->original_references[0]['scan_no']);?>
 		<script type="application/ld+json">

@@ -3,7 +3,7 @@
 /*Adressbuch digitale*/
 
 //on récupère le fichier json qui contient les chemins
-$file = '../webroot/download/images.json';
+$file = '../download/images.json';
 
 //on récupère ce qu'il contient
 $data = file_get_contents($file);
@@ -17,7 +17,7 @@ $directory2 = '../scans/HD/';
 
 ?>
 <!-- on importe la feuille de style -->
-<link rel="stylesheet" type="text/css" href="../webroot/css/slider.css">
+<link rel="stylesheet" type="text/css" href="../css/slider.css">
 <div class="container3">
 <?php
 // on créé une div pour la galerie
