@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         </div>
         <div class="contact">
          <a target="_blank" href="https://www.maxweberstiftung.de/startseite.html">
-            <?=$this->Html->image('/scans/MWS.svg', ['class' => 'wrapper-item', 'id' => 'idh-logo', 'alt' => 'Logo Max Weber stifung', 'width' => '125px', 'style'=>'padding:10px'])?>
+            <?=$this->Html->image('/scans/MWS.svg', ['class' => 'wrapper-item', 'id' => 'idh-logo', 'alt' => 'Logo Max Weber stifung', 'width' => '125px', 'style'=>'padding:10px;filter: invert(1)'])?>
         </a>
 </div>
     </footer>

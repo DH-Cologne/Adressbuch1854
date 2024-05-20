@@ -104,3 +104,28 @@ details h4 {
     cursor: pointer;
     display: inline;
 }
+
+body > div.container {
+    height: auto;
+    margin: auto;
+    max-width: 1200px;
+}
+
+#tabcontent,
+#tabcontents,
+#tabcontent > div.tabpanel,
+#tabcontents > div.tabpanel,
+#tabcontent > div.tabpanel > div.row,
+#tabcontents > div.tabpanel > div.row,
+#tabcontent > div.tabpanel > div.row > div.column-responsive,
+#tabcontents > div.tabpanel > div.row > div.column-responsive,
+#tabcontent > div.tabpanel > div.row > div.column-responsive > div.content,
+#tabcontents > div.tabpanel > div.row > div.column-responsive > div.content {
+    display: contents;
+}
+
+#indextab > div.row,
+#indextab > div.row > div.column-responsive,
+#indextab > div.row > div.column-responsive > div.content {
+    display: contents;
+}
