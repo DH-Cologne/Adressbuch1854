@@ -90,6 +90,10 @@ class ProfessionTable extends Table
             ->maxLength('Anforderungsniveau', 120)
             ->allowEmptyString('Anforderungsniveau');
 
+        $validator
+            ->scalar('q_fact')
+            ->maxLength('q_fact', 7);
+
         return $validator;
     }
 }

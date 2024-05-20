@@ -34,6 +34,7 @@ class Profession extends Entity
         'ohab_ges' => true,
         'OhdAB_01' => true,
         'Anforderungsniveau' => true,
+        'q_fact' => true,
         'companies' => true,
         'persons' => true,
     ];

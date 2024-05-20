@@ -40,12 +40,22 @@ $uri = $this->request->getRequestTarget();
                     <td><?= h($profession->norm) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('ohab_ges') ?></th>
+                  <th><?= __('Berufskategorien (OhdAB)') ?></th>
+                  <td><?= h($profession->OhdAB_01) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('OhdAB ID') ?></th>
                     <td><?= h($profession->ohab_ges) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('OhdAB_01') ?></th>
-                    <td><?= h($profession->OhdAB_01) ?></td>
+                    <th><?= __('Factgrid ID') ?></th>
+                    <td>
+                      <a href="https://database.factgrid.de/wiki/Item:<?= $profession->q_fact ?>"
+                        title="Factgrid-Item <?= $profession->q_fact ?>"
+                        target="_blank">
+                        <?= $profession->q_fact ?>
+                      </a>
+                    </td>
                 </tr>
 				<script type="application/ld+json">
     {
