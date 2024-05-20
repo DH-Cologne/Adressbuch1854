@@ -85,7 +85,7 @@ $uri = $this->request->getRequestTarget();
 							},
 							"name": "<?php echo $street->name_old_clean;
 							if(!empty($street->name_new)) echo ' ('.$street->name_new.')' ?>",
-							"url":"https://adressbuch1854.dh.uni-koeln.de/streets/view/<?php echo $street->id ?>"
+							"url":"https://adressbuch1854.dhi-paris.fr/streets/view/<?php echo $street->id ?>"
 							}
 						</script>
 						<?php endif; ?>

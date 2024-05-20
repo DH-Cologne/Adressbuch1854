@@ -73,7 +73,7 @@
             	<tr>
             		<th><?= __('Scan der Seite') ?></th>
 						<td style="display:flex">
-							<?php print image('http://adressbuch1854.dh.uni-koeln.de/scans/','SD/','BHVP_703983_',$begP);?><br>
+							<?php print image('https://adressbuch1854.dhi-paris.fr/scans/','SD/','BHVP_703983_',$begP);?><br>
 							<?php print scan_zotero($begP); ?>
 							<!-- si on veut mettre les OCR avec les scans -->
 							<?php print text('/Ocerisations/','BHVP_703983_',$begP); ?><br>	
@@ -86,7 +86,7 @@
 						<details>
 								<summary><?= __('Seite in HD ansehen')?></summary>
 									<form>
-										<button type='submit' title="IHA zur Nutzung der Seite <?php echo $begP?>" formtarget='_blank' formaction='http://adressbuch1854.dh.uni-koeln.de/scans/HD/BHVP_703983_<?php echo $begP ?>.jpg'
+										<button type='submit' title="IHA zur Nutzung der Seite <?php echo $begP?>" formtarget='_blank' formaction='https://adressbuch1854.dhi-paris.fr/scans/HD/BHVP_703983_<?php echo $begP ?>.jpg'
 										value="text">BHVP_703983_<?php echo $begP?>.jpg</button>
 									</form>
 							</details>
@@ -241,7 +241,7 @@
 		"postalCode":"F-75",
 		"streetAddress":"<?php echo $houseno. ' ' . $addr_name. ' ('. $addr_new. ')'?>"
 	},
-	"image":"<?php echo 'https://adressbuch1854.dh.uni-koeln.de/scans/HD/BHVP_703983_'. $begP .'.jpg'?>",
+	"image":"<?php echo 'https://adressbuch1854.dhi-paris.fr/scans/HD/BHVP_703983_'. $begP .'.jpg'?>",
 	"jobTitle":"<?php echo $precision2 ?>",
 	"name":"<?php echo $name ?>",
 	"url":"<?php echo $this->request->getUri() ?>"

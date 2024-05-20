@@ -132,7 +132,7 @@ $this->Html->css('multiTable.css');
 	},
 	"jobTitle":"<?php if(!empty($person->profession->profession_verbatim)) echo $person->profession->profession_verbatim ?>",
 	"name":"<?php echo $name ?>",
-	"url":"<?php echo 'https://adressbuch1854.dh.uni-koeln.de/persons/view/'.$person->id ?>"
+	"url":"<?php echo 'https://adressbuch1854.dhi-paris.fr/persons/view/'.$person->id ?>"
 }
 </script>
 	<?php endforeach; ?>

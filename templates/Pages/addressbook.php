@@ -24,10 +24,10 @@ Info Page Addressbook
 
 				<br>
 				<div class="image2">
-				<a target='_blank' href=http://adressbuch1854.dh.uni-koeln.de/scans/HD/BHVP_703983_001.jpg>
-				<img src='http://adressbuch1854.dh.uni-koeln.de/scans/SD/BHVP_703983_001.jpg' style="width:180px; float: left; clear: both;" alt="Seite der Adressbuch" title="IHA zur Nutzung der Seite" /></a>
-				<a target='_blank' href=http://adressbuch1854.dh.uni-koeln.de/scans/HD/BHVP_703983_19.jpg>
-				<img src='http://adressbuch1854.dh.uni-koeln.de/scans/SD/BHVP_703983_19.jpg' style="width:172px;" alt="Seite der Adressbuch" title="IHA zur Nutzung der Seite" /></a>
+				<a target='_blank' href=https://adressbuch1854.dhi-paris.fr/scans/HD/BHVP_703983_001.jpg>
+				<img src='https://adressbuch1854.dhi-paris.fr/scans/SD/BHVP_703983_001.jpg' style="width:180px; float: left; clear: both;" alt="Seite der Adressbuch" title="IHA zur Nutzung der Seite" /></a>
+				<a target='_blank' href=https://adressbuch1854.dhi-paris.fr/scans/HD/BHVP_703983_19.jpg>
+				<img src='https://adressbuch1854.dhi-paris.fr/scans/SD/BHVP_703983_19.jpg' style="width:172px;" alt="Seite der Adressbuch" title="IHA zur Nutzung der Seite" /></a>
 			</div>
 					<blockquote class='displayed'>
 						<ul>

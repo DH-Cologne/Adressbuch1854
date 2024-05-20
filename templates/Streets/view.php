@@ -137,7 +137,7 @@ $uri = $this->request->getRequestTarget();
 			"longitude": "<?php echo $street->geo_long ?>"
 		},
 		"name": "<?php echo $street_name .' ('. $street_new.')' ?>",
-		"url":"https://adressbuch1854.dh.uni-koeln.de/streets/view/<?php echo $street->id ?>"
+		"url":"https://adressbuch1854.dhi-paris.fr/streets/view/<?php echo $street->id ?>"
 							
 	}
 </script>

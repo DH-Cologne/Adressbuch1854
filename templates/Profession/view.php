@@ -57,7 +57,7 @@ $uri = $this->request->getRequestTarget();
         "Category":"<?php echo $profession->name ?>",
 		"OhdAB":"<?php echo $profession->norm ?>",
 		"OhdAB_01":"<?php echo $profession->OhdAB_01 ?>",
-		"url":"https://adressbuch1854.dh.uni-koeln.de/profession/view/<?php echo $profession->id ?>"
+		"url":"https://adressbuch1854.dhi-paris.fr/profession/view/<?php echo $profession->id ?>"
       }
       
     }

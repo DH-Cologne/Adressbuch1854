@@ -92,7 +92,7 @@ $this->Html->css('multiTable.css');
 	},
 	"jobTitle":"<?php if(!empty($company->profession->profession_verbatim)) echo $company->profession->profession_verbatim ?>",
 	"name":"<?php echo $company->name ?>",
-	"url":"<?php echo 'https://adressbuch1854.dh.uni-koeln.de/companies/view/'.$company->id ?>"
+	"url":"<?php echo 'https://adressbuch1854.dhi-paris.fr/companies/view/'.$company->id ?>"
 }
 </script>
 		<?php

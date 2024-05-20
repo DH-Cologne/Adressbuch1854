@@ -60,7 +60,7 @@ $uri = $this->request->getRequestTarget();
       "occupationalCategory": {
         "@type":"Category",
         "Category":"<?php echo $p->name ?>",
-        "url":"https://adressbuch1854.dh.uni-koeln.de/profession/view/<?php echo $p->id ?>"
+        "url":"https://adressbuch1854.dhi-paris.fr/profession/view/<?php echo $p->id ?>"
       }
       
     }

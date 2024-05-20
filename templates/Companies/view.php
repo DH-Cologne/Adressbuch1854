@@ -57,7 +57,7 @@ $uri = $this->request->getRequestTarget();
             				<tr>
             					<th><?= __('Scan der Seite')?></th>
             						<td style="display:flex;">
-									<?php print image('http://adressbuch1854.dh.uni-koeln.de/scans/','SD/','BHVP_703983_',$begP);?><br>
+									<?php print image('https://adressbuch1854.dhi-paris.fr/scans/','SD/','BHVP_703983_',$begP);?><br>
 									<?php print scan_zotero($begP); ?>
 									<?php print text('/Ocerisations/','BHVP_703983_',$begP); ?>
             	   					</td> 
