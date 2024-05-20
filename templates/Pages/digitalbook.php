@@ -3,7 +3,7 @@
 /*Adressbuch digitale*/
 
 //on récupère le fichier json qui contient les chemins
-$file = '../download/images.json';
+$file = '../webroot/download/images.json';
 
 //on récupère ce qu'il contient
 $data = file_get_contents($file);
