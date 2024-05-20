@@ -70,40 +70,27 @@
  
 			<?= !empty($pageRefs) ? __('Eintrag im Buch auf ').implode(' und ', $pageRefs).'.' : ''?>
             <table>
-            	<tr>
-            		<th><?= __('Scan der Seite') ?></th>
+            	<!-- <tr>
+            		<th><?php // echo __('Scan der Seite') ?></th>
 						<td style="display:flex">
-							<?php print image('https://adressbuch1854.dhi-paris.fr/scans/','SD/','BHVP_703983_',$begP);?><br>
-							<?php print scan_zotero($begP); ?>
-							<!-- si on veut mettre les OCR avec les scans -->
-							<?php print text('/Ocerisations/','BHVP_703983_',$begP); ?><br>	
+							<?php // print image('https://adressbuch1854.dhi-paris.fr/scans/','SD/','BHVP_703983_',$begP);?><br>
+							<?php // print scan_zotero($begP); ?>
+							<?php // print text('/Ocerisations/','BHVP_703983_',$begP); ?><br>	
 						</td>
-						<td><a href="/pages/panier_export?action=ajout&amp;l=<?= $person->id ?>&amp;n=<?= $name ?>&amp;p=<?= $person->profession_verbatim?>&amp;u=<?= $this->request->getUri(); ?>" onclick="window.open(this.href, '', 
-				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a>
+						<td><a href="/pages/panier_export?action=ajout&amp;l=<?php // echo $person->id ?>&amp;n=<?php // echo $name ?>&amp;p=<?php // echo $person->profession_verbatim?>&amp;u=<?php // echo $this->request->getUri(); ?>" onclick="window.open(this.href, '', 
+				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/scans/icon-download.png" title="<?php // echo __('Speichern') ?>" style="width: 20px"></a>
 			<td>
 
-						<!--<td>
-						<details>
-								<summary><?= __('Seite in HD ansehen')?></summary>
-									<form>
-										<button type='submit' title="IHA zur Nutzung der Seite <?php echo $begP?>" formtarget='_blank' formaction='https://adressbuch1854.dhi-paris.fr/scans/HD/BHVP_703983_<?php echo $begP ?>.jpg'
-										value="text">BHVP_703983_<?php echo $begP?>.jpg</button>
-									</form>
-							</details>
-										</td>-->
-            	</tr>
-            	<tr>
-            		<th><?= __('Volltexterkennung')?></th>
 						<td>
-							<details>
-								<summary><?= __('Volltext der Seite ansehen')?></summary>
+						<details>
+								<summary><?php // echo __('Seite in HD ansehen')?></summary>
 									<form>
-										<button type='submit' formtarget='_blank' formaction='/Ocerisations/BHVP_703983_<?php echo $begP ?>.txt'
-										value="text">BHVP_703983_<?php echo $begP?>.txt</button>
+										<button type='submit' title="IHA zur Nutzung der Seite <?php // echo $begP?>" formtarget='_blank' formaction='https://adressbuch1854.dhi-paris.fr/scans/HD/BHVP_703983_<?php // echo $begP ?>.jpg'
+										value="text">BHVP_703983_<?php // echo $begP?>.jpg</button>
 									</form>
 							</details>
-						</td>
-				</tr>
+										</td>
+            	</tr> -->
                 <tr>
                     <th><?= __('Nachname') ?></th>
 					<td><?= h($person->name_predicate).' '.h($person->surname) ?></td>
@@ -185,6 +172,27 @@
 						</table>
 					</td>
                 </tr>
+            	  <tr>
+            		  <th><?= __('Scan der Seite') ?></th>
+                  <td>
+                    <details>
+                      <summary><?= __('Scan der Seite ansehen')?></summary>
+							        <?php print image('https://adressbuch1854.dhi-paris.fr/scans/','SD/','BHVP_703983_',$begP);?><br>
+                    </details>
+                  </td>
+                </tr>
+            	<tr>
+            		<th><?= __('Volltexterkennung')?></th>
+						<td>
+							<details>
+								<summary><?= __('Volltext der Seite ansehen')?></summary>
+									<form>
+										<button type='submit' formtarget='_blank' formaction='/Ocerisations/BHVP_703983_<?php echo $begP ?>.txt'
+										value="text">BHVP_703983_<?php echo $begP?>.txt</button>
+									</form>
+							</details>
+						</td>
+				</tr>
             </table>
             <br>
        

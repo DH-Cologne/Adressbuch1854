@@ -54,29 +54,6 @@ $uri = $this->request->getRequestTarget();
             		<h3><?= h($company->name) ?></h3>
 					<?=	!empty($pageRefs) ? __('Eintrag im Buch auf ').implode(' und ', $pageRefs).'.' : '' ?>
             			<table>
-            				<tr>
-            					<th><?= __('Scan der Seite')?></th>
-            						<td style="display:flex;">
-									<?php print image('https://adressbuch1854.dhi-paris.fr/scans/','SD/','BHVP_703983_',$begP);?><br>
-									<?php print scan_zotero($begP); ?>
-									<?php print text('/Ocerisations/','BHVP_703983_',$begP); ?>
-            	   					</td> 
-            						<td><a href="/pages/panier_export?action=ajout&amp;l=<?= $company->id ?>&amp;n=<?= $company->name ?>&amp;p=<?= $company->profession_verbatim?>&amp;u=<?= $this->request->getUri(); ?>" onclick="window.open(this.href, '', 
-				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/scans/icon-download.png" title="<?= __('Speichern') ?>" style="width: 20px"></a>
-			<td>
-	</tr>
-            				<tr>
-            					<th><?= __('Volltexterkennung')?></th>
-            						<td>
-            						<details>
-										<summary><?= __('Volltext der Seite ansehen')?></summary>
-										<form>
-										<button type='submit' formtarget='_blank' formaction='/scans/Ocerisations/BHVP_703983_<?php echo $begP ?>.txt'
-										value="text">BHVP_703983_<?php echo $begP ?>.txt</button>
-										</form>
-									</details>
-            						</td>
-            				</tr>
                 			<tr>
                     			<th><?= __('Name') ?></th>
                     				<td><?= h($company->name) ?></td>
@@ -120,6 +97,34 @@ $uri = $this->request->getRequestTarget();
 								</table>
 							</td>
                 			</tr>
+            				<tr>
+            					<th><?= __('Scan der Seite')?></th>
+                      <td>
+            						<details>
+                          <summary><?= __('Scan der Seite ansehen')?></summary>
+                          <?php print image('https://adressbuch1854.dhi-paris.fr/scans/','SD/','BHVP_703983_',$begP);?><br>
+      									</details>
+                      </td>
+            						<!-- <td style="display:flex;">
+									<?php // print scan_zotero($begP); ?>
+									<?php // print text('/Ocerisations/','BHVP_703983_',$begP); ?>
+            	   					</td> 
+            						<td><a href="/pages/panier_export?action=ajout&amp;l=<?php // echo $company->id ?>&amp;n=<?php // echo $company->name ?>&amp;p=<?php // echo $company->profession_verbatim?>&amp;u=<?php // echo $this->request->getUri(); ?>" onclick="window.open(this.href, '', 
+				'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=800, height=350'); return false;"><img src="/scans/icon-download.png" title="<?php // echo __('Speichern') ?>" style="width: 20px"></a>
+			<td> -->
+	</tr>
+            				<tr>
+            					<th><?= __('Volltexterkennung')?></th>
+            						<td>
+            						<details>
+										<summary><?= __('Volltext der Seite ansehen')?></summary>
+										<form>
+										<button type='submit' formtarget='_blank' formaction='/Ocerisations/BHVP_703983_<?php echo $begP ?>.txt'
+										value="text">BHVP_703983_<?php echo $begP ?>.txt</button>
+										</form>
+									</details>
+            						</td>
+            				</tr>
             			</table>
             <?php if (!empty($company->persons)) : ?>
 			<div class="related">
