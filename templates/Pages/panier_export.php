@@ -1,5 +1,7 @@
 <?php
 
+$_GET = filter_input_array(INPUT_GET, FILTER_SANITIZE_STRING);
+$_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
 session_start();
 require_once(__DIR__."/../functions/export.php");
