@@ -138,7 +138,7 @@
 					echo $this->Form->radio('bold', [['value' => '1', 'text' => __(' Ja')], ['value' => '0', 'text' => __(' Nein')]], ['hiddenField' => false]);
 
 					echo $this->Form->label('advert', __('Hat einen Eintrag in der Geschäftsliste?'));
-					echo $this->Form->radio('advert', [['value' => '1', 'text' => __(' Ja')], ['value' => '0', 'text' => __(' Nein')]], ['hiddenField' => false]);
+					echo $this->Form->radio('advert', [['value' => '1', 'text' => __(' Ja'), 'id' => 'publicity-1'], ['value' => '0', 'text' => __(' Nein'), 'id' => 'publicity-0']], ['hiddenField' => false]);
 					
 					echo $this->Form->label('notable_commercant', __('Notable commercant [NC]?'));
 					echo $this->Form->radio('notable_commercant', [['value' => '1', 'text' => __(' Ja')], ['value' => '0', 'text' => __(' Nein')]], ['hiddenField' => false]);
