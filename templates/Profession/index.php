@@ -30,8 +30,9 @@ $uri = $this->request->getRequestTarget();
                     <th><?= __('Berufe Adressbuch') ?></th>
                     <th><?= __('Berufskategorie') ?></th>
                     <th><?= __('Berufsgattungsname (OhdAB)') ?></th>
-                    <th><?= __('ohab_ges') ?></th>
-                    <th><?= __('OhdAB_01') ?></th>
+                    <th><?= __('Berufskategorien (OhdAB)') ?></th>
+                    <th><?= __('OhdAB ID') ?></th>
+                    <th><?= __('Factgrid ID') ?></th>
                   
                     
                     
@@ -45,8 +46,9 @@ $uri = $this->request->getRequestTarget();
                     <td><?= $this->Html->link($p->profession_verbatim, ['controller'=>'Profession', 'action'=>'view', $p->id]) ?></td>
                     <td><?= h($p->name) ?></td>
                     <td><?= h($p->norm) ?></td>
-                    <td><?= h($p->ohab_ges) ?></td>
                     <td><?= h($p->OhdAB_01) ?></td>
+                    <td><?= h($p->ohab_ges) ?></td>
+                    <td><?= h($p->q_fact) ?></td>
                     
                     
               
