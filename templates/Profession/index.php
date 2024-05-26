@@ -28,7 +28,7 @@ $uri = $this->request->getRequestTarget();
                 <tr>
                     
                     <th><?= __('Berufe Adressbuch') ?></th>
-                    <th><?= __('Berufskategorie') ?></th>
+                    <!-- <th><?php echo // __('Berufskategorie') ?></th> -->
                     <th><?= __('Berufsgattungsname (OhdAB)') ?></th>
                     <th><?= __('Berufskategorien (OhdAB)') ?></th>
                     <th><?= __('OhdAB ID') ?></th>
@@ -44,7 +44,7 @@ $uri = $this->request->getRequestTarget();
                     <?php if($p->profession_verbatim && $p->name && $p->norm && $p->ohab_ges && $p->OhdAB_01 != null): ?>
                 <tr>
                     <td><?= $this->Html->link($p->profession_verbatim, ['controller'=>'Profession', 'action'=>'view', $p->id]) ?></td>
-                    <td><?= h($p->name) ?></td>
+                    <!-- <td><?php // h($p->name) ?></td> -->
                     <td><?= h($p->norm) ?></td>
                     <td><?= h($p->OhdAB_01) ?></td>
                     <td><?= h($p->ohab_ges) ?></td>

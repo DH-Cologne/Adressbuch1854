@@ -68,10 +68,10 @@ $uri = $this->request->getRequestTarget();
 				echo $this->Html->link($company->profession->profession_verbatim, ['controller'=>'Profession','action'=>'view', $company->profession->id]);
 				}?></td>
                 			</tr>
-                			<tr>
-                    			<th><?= __('Berufskategorie') ?></th>
-                    			<td><?= $company->has('prof_category') ? $company->prof_category->name : '' ?></td>
-                			</tr>
+                			<!-- <tr>
+                    			<th><?php // echo __('Berufskategorie') ?></th>
+                    			<td><?php // echo $company->has('prof_category') ? $company->prof_category->name : '' ?></td>
+                			</tr> -->
 							<tr>
 								<th><?=__('Adresse(n)')?></th>
 								<td>

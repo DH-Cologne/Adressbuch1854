@@ -34,7 +34,7 @@ $this->Html->css('multiTable.css');
 			<th><?= __('Beruf') ?></th>
 			<th><?= __('Adresse(n)') ?></th>
 			<th class="middle-width"><?= __('Sonstige Merkmale') ?></th>
-			<th class="middle-width"><?= __('Kategorien') ?></th>
+			<!-- <th class="middle-width"><?php // echo __('Kategorien') ?></th> -->
 		</tr>
 		<?php
 		$countNo = 1 + $offset;
@@ -57,9 +57,9 @@ $this->Html->css('multiTable.css');
 			}
 
 			$cats = [];
-			if($person->has('prof_category')){
-				array_push($cats, $person->prof_category->name);
-			}
+			// if($person->has('prof_category')){
+			// 	array_push($cats, $person->prof_category->name);
+			// }
 			/*if($person->has('social_status') && $person->social_status->status != 'Commoner'){
 				array_push($cats, $person->social_status->status);
 			}

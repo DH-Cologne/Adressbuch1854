@@ -31,10 +31,10 @@ $uri = $this->request->getRequestTarget();
                     <th><?= __('Berufe Adressbuch') ?></th>
                     <td><?= h($profession->profession_verbatim) ?></td>
                 </tr>
-                <tr>
-                    <th><?= __('Berufkategorie') ?></th>
-                    <td><?= h($profession->name) ?></td>
-                </tr>
+                <!-- <tr>
+                    <th><?php // echo __('Berufkategorie') ?></th>
+                    <td><?php // echo h($profession->name) ?></td>
+                </tr> -->
                 <tr>
                     <th><?= __('Berufgattungsname (OhdAB)') ?></th>
                     <td><?= h($profession->norm) ?></td>
