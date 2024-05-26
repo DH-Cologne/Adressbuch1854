@@ -129,3 +129,21 @@ body > div.container {
 #indextab > div.row > div.column-responsive > div.content {
     display: contents;
 }
+
+#mapBox2:not(.ready)::after {
+  z-index: 1000;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+
+  content: 'Loading...';
+  font-size: 5rem;
+  font-weight: bold;
+
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}

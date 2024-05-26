@@ -226,6 +226,7 @@ function initializeMarkers() {
         if (json.companies) json.companies.forEach(mapCompany);
 
         leafletMap.addLayer(markers);
+        document.getElementById("mapBox2").classList.toggle('ready');
     });
 }
 
@@ -269,6 +270,8 @@ function mapCompany(json) {
  */
 function makePinPerAddress(addressArray, name, prof, id, isPerson) {
     addressArray.forEach(function (addr) {
+        if ((!addr.geo_lat && !addr.street.geo_lat) || (!addr.geo_long && !addr.street.geo_long)) return;
+
         var addrFull = addr.street.name_old_clean;
         if (addrFull != addr.street.name_new) addrFull += " (" + addr.street.name_new + ")";
         if (addr.houseno) addrFull += " " + addr.houseno;
