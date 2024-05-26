@@ -280,17 +280,11 @@ class SearchController extends AppController
 		// Query for $prof (given profession of a person or company)
 		if(!empty($prof)){
             $persons->matching('Profession', function($q) use ($prof){
-                return $q->where(['OR' => [
-                    ['Profession.profession_verbatim LIKE' => '%'.$prof.'%'],
-                    ['Profession.profession_unified LIKE' => '%'.$prof.'%']
-                ]]);
+                return $q->where(['Profession.profession_verbatim LIKE' => '%'.$prof.'%']);
             }
         );
         $companies->matching('Profession', function($q) use ($prof){
-                return $q->where(['OR' => [
-                    ['Profession.profession_verbatim LIKE' => '%'.$prof.'%'],
-                    ['Profession.profession_unified LIKE' => '%'.$prof.'%']
-                ]]);
+                return $q->where(['Profession.profession_verbatim LIKE' => '%'.$prof.'%']);
             }
         );
 		}
