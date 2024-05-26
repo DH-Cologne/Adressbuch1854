@@ -102,8 +102,8 @@
 				<?php
 					echo $this->Form->control('prof', ['label' => __('Beruf')]);
 
-					echo $this->Form->label('prof_cat', __('Berufskategorie'));
-					echo $this->Form->select('prof_cat', $beruf, ['empty' => true]);
+					// echo $this->Form->label('prof_cat', __('Berufskategorie'));
+					// echo $this->Form->select('prof_cat', $beruf, ['empty' => true]);
 				?>
 				</div>
 				<div class="form address">
@@ -122,8 +122,8 @@
 					echo $this->Form->label('ldh_rank', __('Rang der Légion d\'Honneur'));
 					echo $this->Form->select('ldh_rank', $rank, ['empty' => true]);
 
-					echo $this->Form->label('institut', __('Mitglied des Institut de France?').' (de l\'Institut)');
-					echo $this->Form->radio('institut', [['value' => '1', 'text' => __(' Ja')], ['value' => '0', 'text' => __(' Nein')]], ['hiddenField' => false]);
+					// echo $this->Form->label('institut', __('Mitglied des Institut de France?').' (de l\'Institut)');
+					// echo $this->Form->radio('institut', [['value' => '1', 'text' => __(' Ja')], ['value' => '0', 'text' => __(' Nein')]], ['hiddenField' => false]);
 
 					/*echo $this->Form->label('soc_stat', __('Sozialer Stand'));
 					echo $this->Form->select('soc_stat', $optionsSoc, ['empty' => true]);
@@ -134,7 +134,7 @@
 					echo $this->Form->label('occ_stat', __('Beruflicher Status'));
 					echo $this->Form->select('occ_stat', $optionsOcc, ['empty' => true]);*/
 
-					echo $this->Form->label('bold', __('Hat das Adressbuch vorabonniert').' '.__('(im Buch fett gedruckt) ?'));
+					echo $this->Form->label('bold', __('Hat das Adressbuch vorabonniert').' '.__('(im Buch fett gedruckt)?'));
 					echo $this->Form->radio('bold', [['value' => '1', 'text' => __(' Ja')], ['value' => '0', 'text' => __(' Nein')]], ['hiddenField' => false]);
 
 					echo $this->Form->label('advert', __('Hat einen Eintrag in der Geschäftsliste?'));
