@@ -36,7 +36,7 @@ function initializeMap() {
     //The historic map is created with data from IGN https://www.geoportail.gouv.fr/donnees/carte-de-letat-major-1820-1866
 
     var cartohisto = L.tileLayer(
-        "https://wxs.ign.fr/cartes/geoportail/wmts?" +
+        "https://data.geopf.fr/wmts?" +
             "&REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0" +
             "&STYLE=normal" +
             "&TILEMATRIXSET=PM" +
