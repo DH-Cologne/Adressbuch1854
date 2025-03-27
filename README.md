@@ -1,5 +1,5 @@
 # Adressbuch1854
-Relaunch of http://adressbuch1854.dhi-paris.fr
+Relaunch of https://adressbuch1854.dhi-paris.fr
 
 A project by Deutsches Historisches Institut Paris (DHIP), Department for Digital Humanities
 

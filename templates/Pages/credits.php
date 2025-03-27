@@ -14,7 +14,7 @@ Credits
 			<?= __('75003 Paris') ?><br>
 			<?= __('Tel.  +33 (0)1 44 54 23 80') ?><br>
 			<?= __('Fax  +33 (0)1 42 71 56 43') ?><br>
-			Mail: <a href='mailto:adressbuch1854@dhi-paris.fr'>adressbuch1854@dhi-paris.fr</a></p>
+			Mail: <a href='mailto:dh@dhi-paris.fr'>dh@dhi-paris.fr</a></p>
 
 			<h4><?= __('Vertreter') ?></h4>
 			<p><?= __('Das Deutsche Historische Institut Paris ist Teil der Max Weber Stiftung - Deutsche Geisteswissenschaftliche Institute im Ausland (MWS), Rheinallee 6, 53173 Bonn, Deutschland. Die MWS ist eine bundesunmittelbare Stiftung öffentlichen Rechts, die durch Gesetz errichtet wurde. Sie wird vertreten durch den Geschäftsführer Dr. Harald Rosenbach.') ?></p>
@@ -39,7 +39,7 @@ Credits
 			<p><?= __('Mareike König') ?></p>
 			<br>
 
-			<p><?= __('Letzte Änderung: 11.04.2024') ?></p>
+			<p><?= __('Letzte Änderung: 30.05.2024') ?></p>
 
 		</div>
 	</div>
